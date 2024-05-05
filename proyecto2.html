@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registro de Campistas</title>
+    <link rel="stylesheet" href="css/practica29.css">
+    <link rel="icon" href="imagenes/icono.png">
+  </head>
+  <body>
+    <header>
+      <A href="fotos.html"><button class="fotos"><h3>Fotos</h3></button></A>
+      <A href="Principal.html"><button class="regresar"><h3>Regresar</h3></button></A>
+      </header>
+    <table>
+     <form class="" action="Registro_Campistas.php" method="post" id="formulario">
+       <div class="texto">
+         <h1>Campamento Juvenil 2020</h1>
+         <h3>Inscripcion</h3>
+       </div>
+       <tr>
+         <td>Nombre <br><input type="text" name="nombre" class="inf" id="cajaLetras" placeholder="Ingrese su nombre" oninput="sololetras(), mayusculas1()"><br><p id="mensajeError1">Por favor, ingrese solo letras.</p></td>
+         <td>Apellidos <br><input type="text" name="apellidos" class="inf" id="cajaLetras2" placeholder="Ingrese sus apellidos" oninput="sololetras1(), mayusculas2()"><br><p id="mensajeErrorA">Por favor, ingrese solo letras.</p></td>
+       </tr>
+       <tr>
+         <td>Edad <br><input type="number" name="edad" class="inf" id="cajaNumeros" placeholder="Ingrese su edad" oninput="solonumeros()"><br><p id="mensajeError2">Por favor, ingrese solo Numeros.</p></td>
+         <td>Sexo <br><select name="sexo" class="inf2">
+           <option value= "FEMENINO">FEMENINO</option>
+           <option value= "MASCULINO">MASCULINO</option>
+         </select></td>
+       </tr>
+       <tr>
+         <td>Ciudad <br><select name="ciudad"class="inf2" id= "Ciudad" onchange="habilitar()">
+           <option value= "ROSARITO">ROSARITO</option>
+           <option value= "TIJUANA">TIJUANA</option>
+           <option value= "ENSENADA">ENSENADA</option>
+           <option value= "TECATE">TECATE</option>
+           <option value= "MEXICALI">MEXICALI</option>
+         </select></td>
+         <td>Otro: <br><input type="text" name="otro" class="inf" id="cajaLetras4" oninput="sololetras3(), mayusculas3()"><br><p id="mensajeErrorC">Por favor, ingrese solo letras.</p></td>
+       </tr>
+       <tr>
+         <td>Otro: <br><select name="otro2" class="inf2">
+           <option value= "SI">SI</option>
+           <option value= "NO">NO</option></td>
+         <td>Celular: <br><input type="tel" name="celular" class="inf" id="cajaNumeros2" placeholder="Ingrese su número telefónico" oninput="solonumeros2()"><br><p id="mensajeErrorD">Por favor, ingrese solo numeros.</p></td>
+       </tr>
+       <tr>
+         <td>Transporte: <br><select name="transporte"class="inf2" id="Transporte" disabled>
+           <option value= "SI">SI</option>
+           <option value= "NO">NO</option></td>
+         <td rowspan="2">Comentarios: <br><textarea name="comentarios" id="cajaComentarios" placeholder="Ingrese sus comentarios" rows="7" cols="30" class="com" oninput="mayusculas4()"></textarea></td>
+       </tr>
+       <tr>
+         <td>Camisa: <br><select name="camisa" class="inf2" onchange="aparecer()" id= "camisas">
+           <option value= "SI">SI</option>
+           <option value= "NO">NO</option></select></td>
+       </tr>
+       <tr>
+         <td>Talla: <br><select name="tallas"class="inf2" id="talla">
+           <option value= "S">S</option>
+           <option value= "M">M</option>
+           <option value= "L">L</option>
+           <option value= "XL">XL</option></select></td>
+       </tr>
+       <tr>
+         <td colspan="2"><input type="submit" name="enviar" class="boton"></td>
+       </tr>
+     </table>
+     </form>
+  </body>
+  <script type="text/javascript" src="js/Validaciones.js"></script>
+  <script type="text/javascript" src="js/practica29.js"></script>
+</html>

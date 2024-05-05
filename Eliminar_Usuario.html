@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de bajas</title>
+    <link rel="stylesheet" href="css/Eliminar_Usuario.css">
+    <link rel="icon" href="imagenes/icono.png">
+</head>
+<body>
+    <form action="Eliminar.php" method="post">
+        <table>
+            <h1>Baja de cuenta</h1>
+            <h2>Ingresar los siguientes datos</h2>
+            <table>
+                <tr>
+                    <td><h3>Nombre de usuario:</h3></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="usuario" class="caja" id="cajaLetras" placeholder="Ingrese su nombre de usuario" oninput="sololetras()"><br><p id="mensajeError1">Por favor, ingrese solo letras.</p></td>
+                </tr>
+
+                <tr>
+                    <td><h3>Contraseña:</h3></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="password" name="contraseña1" class="caja" id="cajaNumeros" placeholder="Ingrese su contraseña"  oninput="solonumeros()"><br><p id="mensajeError2">Por favor, ingrese solo numeros.</p></td>
+                </tr>
+
+                <tr>
+                    <td><h3> Volver a escribir la contraseña:</h3></td>
+
+                </tr>
+
+                <tr>
+                    <td><input type="password" name="contraseña2" class="caja" id="cajaNumeros2" placeholder="Confirmar contraseña"  oninput="solonumeros2()"><br><p id="mensajeErrorD">Por favor, ingrese solo numeros.</p></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><input type="submit" name="eliminar" value="Eliminar" class="boton"></td>
+                </tr>
+            </table>
+        </form>
+        </table>
+    </form>
+</body>
+<script type="text/javascript" src="js/Validaciones.js"></script>
+</html>
