@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Oswald';
+    background-image: url("../imagenes/camping2.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display:block;
+    background-size: cover;
+    background-position: center;
+    background-color: #A8DDE0;
+}
+.boton{
+    width: 200px;
+    height: 200px;
+}
+.boton:hover{
+    width: 300px;
+    height: 300px;
+}
+header{
+    background-image: url("../imagenes/cielo.jpg");
+    background-position: center;
+    background-size: cover;
+    display:flex;
+    height: 8%;
+    width: 100%;
+    border: 3px solid black;
+}
+div{
+    margin-top: 50px;
+    display: flex;
+}
+.sesion{
+font-family: 'Oswald';
+background-image: url("../imagenes/cielo.jpg");
+background-position: center;
+background-size: cover;
+margin-top: 2px;
+margin-left: 1050%;
+display: block;
+text-align: center;
+line-height: 50%;
+height: 80%;
+width: 120%;
+}
+.nosotros{
+line-height: 50%;
+font-family: 'Oswald';
+margin-right: 3px;
+margin-left: 920%;
+margin-top: 2px;
+display: block;
+text-align: center;
+height: 80%;
+width: 100%;
+background-image: url("../imagenes/cielo.jpg");
+background-position: center;
+background-size: cover;
+}
+.sesion:active{
+    margin-left: 1050%;
+    margin-top: 2px;
+    display: block;
+    text-align: center;
+    height: 90%;
+    width: 130%;
+    }
+    .nosotros:active{
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-left: 920%;
+    display: block;
+    text-align: center;
+    height: 90%;
+    width: 110%;
+    background-color: blue;
+    }
+    table{
+        text-align: center;
+    }
+.cuenta{
+    background-image: url("../imagenes/cielo.jpg");
+}
+.consulta{
+    background-image: url("../imagenes/cielo.jpg");
+}
